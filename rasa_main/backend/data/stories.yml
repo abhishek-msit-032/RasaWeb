@@ -1,0 +1,789 @@
+version: "2.0"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_specific
+
+- story: specific
+  steps: 
+  - intent: specific
+  - action: utter_specific
+
+- story: happy
+  steps: 
+  - intent: happy
+  - action: utter_happy
+
+- story: bye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+  - intent: affirm
+  - action: utter_happy
+
+  
+
+- story:  Placement
+  steps:
+  - intent: Placement
+  - action: utter_placement
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_happy
+
+- story:  Placement
+  steps:
+  - intent: Placement
+  - action: utter_placement
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_specific
+
+
+- story: Package
+  steps:
+  - intent: Package
+  - action: action_package
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_happy
+
+
+- story: Package
+  steps:
+  - intent: Package
+  - action: action_package
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_specific
+  
+
+
+- story: package_details
+  steps:
+  - intent: package_details
+  - action: utter_package
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_specific
+  
+
+
+- story: package_details
+  steps:
+  - intent: package_details
+  - action: utter_package
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_happy
+
+- story: Fee
+  steps: 
+  - intent: Fee
+  - action: action_fee
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_specific
+  
+
+
+- story: Fee
+  steps: 
+  - intent: Fee
+  - action: action_fee
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_happy
+
+- story: companies
+  steps:
+    - intent: companies
+    - action: utter_company
+    - action: utter_did_that_help
+    - intent: affirm
+    - action: utter_specific
+
+- story: companies
+  steps:
+    - intent: companies
+    - action: utter_company
+    - action: utter_did_that_help
+    - intent: deny
+    - action: utter_happy
+
+
+- story: information
+  steps:
+   - intent: information
+   - action: utter_info
+   - action: utter_did_that_help
+   - intent: affirm
+   - action: utter_specific
+
+- story: information
+  steps:
+   - intent: information
+   - action: utter_info
+   - action: utter_did_that_help
+   - intent: deny
+   - action: utter_happy
+
+- story: laptop
+  steps:
+  - intent: laptop
+  - action: utter_lappy
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_happy
+
+- story: laptop
+  steps:
+  - intent: laptop
+  - action: utter_lappy
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_specific
+
+- story: benefits
+  steps:
+  - intent: benefits
+  - action: utter_benefits
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_happy
+
+- story: benefits
+  steps:
+  - intent: benefits
+  - action: utter_benefits
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_specific
+  
+  
+
+
+- story: classes
+  steps:
+  - intent: extra_classes
+  - action: utter_extra_classes
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_specific
+
+- story: classes
+  steps:
+  - intent: extra_classes
+  - action: utter_extra_classes
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_happy
+
+- story: prerequisites
+  steps:
+  - intent: prerequisites
+  - action: utter_prerequisites
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_specific
+
+- story: prerequisites
+  steps:
+  - intent: prerequisites
+  - action: utter_prerequisites
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_happy
+
+
+- story: concession
+  steps:
+  - intent: concession
+  - action: utter_concession
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_specific
+
+- story: concession
+  steps:
+  - intent: concession
+  - action: utter_concession
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_happy
+
+- story: backlogs
+  steps:
+  - intent: backlogs
+  - action: utter_backlogs
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_specific
+
+- story: backlogs
+  steps:
+  - intent: backlogs
+  - action: utter_backlogs
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_happy
+
+
+- story: cutoff
+  steps:
+  - intent: cutoff
+  - action: utter_cutoff
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_specific
+
+
+- story: cutoff
+  steps:
+  - intent: cutoff
+  - action: utter_cutoff
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_happy
+
+- story: Documentation
+  steps:
+  - intent: Documentation
+  - action: utter_Documentation
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_specific
+
+- story: Documentation
+  steps:
+  - intent: Documentation
+  - action: utter_Documentation
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_happy
+
+- story: attempts
+  steps:
+  - intent: attempts
+  - action: utter_attempts
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_specific
+  
+
+
+- story: attempts
+  steps:
+  - intent: attempts
+  - action: utter_attempts
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_happy
+
+
+- story: deny application
+  steps:
+  - intent: deny_application
+  - action: utter_deny_application
+
+- story: deny application
+  steps:
+  - intent: affirm_application
+  - action: utter_affirm_application
+
+- story: marks
+  steps:
+  - intent: marks
+  - action: utter_marks
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_specific
+
+- story: marks
+  steps:
+  - intent: marks
+  - action: utter_marks
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_happy
+
+- story: recorded_classes
+  steps:
+  - intent: recorded_classes
+  - action: utter_recorded_classes
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_specific
+
+- story: recorded_classes
+  steps:
+  - intent: recorded_classes
+  - action: utter_recorded_classes
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_happy
+
+- story: batches
+  steps:
+    - intent: batches
+    - action: utter_batches
+    - action: utter_did_that_help
+    - intent: affirm
+    - action: utter_specific
+
+- story: batches
+  steps:
+    - intent: batches
+    - action: utter_batches
+    - action: utter_did_that_help
+    - intent: deny
+    - action: utter_happy
+  
+- story: mentors
+  steps:
+    - intent: mentors
+    - action: utter_mentors
+    - action: utter_did_that_help
+    - intent: affirm
+    - action: utter_specific
+
+
+- story: mentors
+  steps:
+    - intent: mentors
+    - action: utter_mentors
+    - action: utter_did_that_help
+    - intent: deny
+    - action: utter_happy
+  
+
+- story: Duration
+  steps:
+    - intent: Duration
+    - action: utter_duration
+    - action: utter_did_that_help
+    - intent: affirm
+    - action: utter_specific
+
+- story: Duration
+  steps:
+    - intent: Duration
+    - action: utter_duration
+    - action: utter_did_that_help
+    - action: utter_did_that_help
+    - intent: deny
+    - action: utter_happy
+
+- story: dress
+  steps: 
+    - intent: dress
+    - action: utter_dress
+    - action: utter_did_that_help
+    - intent: affirm
+    - action: utter_specific
+
+- story: dress
+  steps: 
+    - intent: dress
+    - action: utter_dress
+    - action: utter_did_that_help
+    - intent: deny
+    - action: utter_happy
+
+- story: hostel
+  steps:
+    - intent: hostel
+    - action: utter_hostel
+    - action: utter_did_that_help
+    - intent: affirm
+    - action: utter_specific
+
+
+- story: hostel
+  steps:
+    - intent: hostel
+    - action: utter_hostel
+    - action: utter_did_that_help
+    - intent: deny
+    - action: utter_happy
+
+
+- story: percentage
+  steps:
+    - intent: percentage
+    - action: utter_percentage
+    - action: utter_did_that_help
+    - intent: affirm
+    - action: utter_specific
+
+- story: percentage
+  steps:
+    - intent: percentage
+    - action: utter_percentage
+    - action: utter_did_that_help
+    - intent: deny
+    - action: utter_happy
+
+- story: course structure
+  steps:
+  - intent: course_structure
+  - action: utter_course
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_specific
+
+- story: course structure
+  steps:
+  - intent: course_structure
+  - action: utter_course
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_happy
+
+
+- story: Non-IT Background
+  steps:
+  - intent: Non-IT_Background
+  - action: utter_Non_IT
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_specific
+
+
+- story: Non-IT Background
+  steps:
+  - intent: Non-IT_Background
+  - action: utter_Non_IT
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_happy
+ 
+- story: Grading policy
+  steps:
+  - intent: Grading_policy
+  - action: utter_Grading
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_specific
+
+
+- story: Grading policy
+  steps:
+  - intent: Grading_policy
+  - action: utter_Grading
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_happy
+
+- story: Learning centers
+  steps:
+  - intent: Learning_centers
+  - action: utter_learning-centers
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_specific
+
+
+- story: Learning centers
+  steps:
+  - intent: Learning_centers
+  - action: utter_learning-centers
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_happy
+
+
+ 
+- story: specializations
+  steps:
+  - intent: specializations
+  - action: utter_specializations
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_specific
+
+  
+
+
+- story: specializations
+  steps:
+  - intent: specializations
+  - action: utter_specializations
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_happy
+
+
+
+- story: credit system
+  steps:
+  - intent: credit_system
+  - action: utter_credit_system
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_specific
+
+  
+ 
+- story: credit system
+  steps:
+  - intent: credit_system
+  - action: utter_credit_system
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_happy
+
+
+ 
+- story: GAT syllabus
+  steps:
+  - intent: GAT_syllabus
+  - action: utter_GAT
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_specific
+
+
+- story: GAT syllabus
+  steps:
+  - intent: GAT_syllabus
+  - action: utter_GAT
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_specific
+
+
+
+
+ 
+- story: class strength
+  steps:
+  - intent: class_strength
+  - action: utter_class_strength
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_specific
+
+- story: class strength
+  steps:
+  - intent: class_strength
+  - action: utter_class_strength
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_happy
+
+
+
+- story: class timings
+  steps:
+  - intent: class_timings 
+  - action: utter_timings
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_specific
+
+- story: class timings
+  steps:
+  - intent: class_timings 
+  - action: utter_timings
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_happy
+
+
+- story: first year curriculum 
+  steps:
+  - intent: first_year_curriculum 
+  - action: utter_first_year
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_specific
+ 
+- story: first year curriculum 
+  steps:
+  - intent: first_year_curriculum 
+  - action: utter_first_year
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_happy
+
+
+ 
+- story: second year curriculum 
+  steps:
+  - intent: second_year_curriculum 
+  - action: utter_second_year
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_specific
+ 
+
+- story: second year curriculum 
+  steps:
+  - intent: second_year_curriculum 
+  - action: utter_second_year
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_happy
+
+ 
+- story: Attendence percentage 
+  steps:
+  - intent: Attendence_percentage 
+  - action: utter_Attendence_Percentage
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_specific
+ 
+ 
+- story: Attendence percentage 
+  steps:
+  - intent: Attendence_percentage 
+  - action: utter_Attendence_Percentage
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_happy
+ 
+- story: count of semesters 
+  steps:
+  - intent: count_of_semesters
+  - action: utter_count_sem
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_specific
+ 
+
+- story: count of semesters 
+  steps:
+  - intent: count_of_semesters
+  - action: utter_count_sem
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_happy
+ 
+- story: sem based exams  
+  steps:
+  - intent: sem_based_exams 
+  - action: utter_sem_exams
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_specific
+
+- story: sem based exams  
+  steps:
+  - intent: sem_based_exams 
+  - action: utter_sem_exams
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_happy
+ 
+
+
+- story: CIHL
+  steps:
+  - intent: CIHL
+  - action: utter_CIHL
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_specific
+
+- story: CIHL
+  steps:
+  - intent: CIHL
+  - action: utter_CIHL
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_happy
+ 
+
+ 
+- story: mock
+  steps:
+  - intent: mock_test
+  - action: utter_mock
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_specific 
+
+- story: mock
+  steps:
+  - intent: mock_test
+  - action: utter_mock 
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_happy
+ 
+ 
+- story: leave
+  steps:
+  - intent: leave
+  - action: utter_leave 
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_specific 
+
+
+- story: leave
+  steps:
+  - intent: leave
+  - action: utter_leave 
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_happy
+ 
+
+
+ 
+
+- story: sat class
+  steps:
+  - intent: sat_class
+  - action: utter_saturday
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_specific 
+
+
+- story: sat class
+  steps:
+  - intent: sat_class
+  - action: utter_saturday
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_happy
+
+- story: Thankyou
+  steps:
+  - intent: Thankyou
+  - action: utter_thankyou
+ 
+
+
+
+
+

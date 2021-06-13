@@ -1,0 +1,311 @@
+version: "2.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - good afternoon
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - Yes
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - No
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: specific
+  examples: |
+    - Yes
+
+- intent: happy
+  examples: |
+    - No
+
+
+- intent: Thankyou
+  examples: |
+    - Already Registered
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+- intent: Placement
+  examples: |
+    - what about the placements?
+    - can you tell me the placements details?
+    - Placements
+    - what percentage of students got placed last year?
+    - previous years placement details?
+- intent: Package
+  examples: |
+    - what is the highest package in [2020](year)
+    - what is the highest package in [2019](year)
+    - what is the highest package in [2018](year)
+
+- intent: package_details
+  examples: |
+    - what is the basic package at MSIT
+    - package details
+  
+    
+- intent: Fee
+  examples: |
+    - what is the fee structure at [JNUTH](institute)
+    - what is the fee structure at [IIIT](institute)
+    - what is the fee structure at [JNTUK](institute)
+    - what is the fee structure at [SVU](institute)
+    - fee details
+    
+    
+- intent: affirm_application
+  examples: |
+    - Yes, I would like to fill the application
+    - Yes, I will fill
+    - Yes, i will
+
+- intent: deny_application
+  examples: |
+    - No, I would not like to fill the application
+    - No, I won't
+    - I will do it later
+    - No, I will do it later
+
+- intent: companies
+  examples: |
+    - what are the companies that visited MSIT?
+    - companies visited
+    - what companies visit MSIT
+
+- intent: information
+  examples: |
+    - I want to know more information
+    - can you provide more information
+- intent: laptop
+  examples: |
+   - is it necessary to buy a new laptop?
+   - should I buy a new laptop?
+   - can I use my old laptop
+
+- intent: benefits
+  examples: |
+    - is this really a good course?
+    - is this a useful course?
+    - what are the benefits of this course?
+- intent: extra_classes
+  examples: |
+    - Any extra classes are provided if the students are not able to understand?
+    - will there be any extra classes for the studets who do not understand few concepts?
+- intent: prerequisites
+  examples: |
+    - Are there any prerequisites languages that we need to learn before joining the course?
+    - what are the prerequisites to join the course?
+    - prerequesites
+- intent: concession
+  examples: |
+    - Do merit students get any concession?
+    - Is there any concession facility for merit students?
+
+- intent: backlogs
+  examples: |
+    - Will our backlogs affect our joining the college?
+    - How does our backlogs affect us in joining the course?
+    - What if we have backlogs?
+- intent: cutoff
+  examples: |
+    - Is there any cutoff percentage for the college to join the course?
+    - what is the cutoff in GAT exam to join the course?
+- intent: Documentation
+  examples: |
+    - Will the faculty provide any documentation for the course?
+    - Will the college provides us any handbook regarding the course curriculum?
+
+- intent: attempts
+  examples: |
+    - How many times can we attend the entrance exam?
+- intent: marks
+  examples: |
+    - On what basis students will get marks?
+- intent: reccorded_classes
+  examples: |
+    - Will there be any recorded classes provided if the students miss the class?
+- intent: batches
+  examples: |
+    - Will the batches be shuffled or else the same bathes will continue?
+- intent: mentors
+  examples: |
+    - Will all the students have one mentor?
+    - For each course how many faculty members will be available?
+- intent: Duration
+  examples: |
+    - What is the duration of each course?
+- intent: dress
+  examples: |
+    - Is there any dress code for college?
+- intent: hostel
+  examples: |
+    - Can students stay out of campus hostels?
+    - hostel details?
+    - do students get hostel facility?
+- intent: percentage
+  examples: |
+    - For each course how many credits do we need to score?
+    - what is the pass percentage?
+- intent: course_structure
+  examples: |
+    - what is the course structure?
+
+- intent: Non-IT_Background
+  examples: |
+    - I am from a Non-IT background. Will I get on in this course?
+
+- intent: Grading_policy
+  examples: |
+    - How will be the grading policy?
+
+- intent: Learning_centers
+  examples: |
+    - What are the different learning centers?
+
+- intent: specializations
+  examples: |
+    - What are the different specializations offered in the course?
+
+- intent: credit_system
+  examples: |
+    - Is there any credit system?
+
+- intent: GAT_syllabus
+  examples: |
+    - What is the syllabus for the GAT?
+
+- intent: class_strength
+  examples: |
+    - The total strength of a classes?
+
+- intent: class_timings
+  examples: |
+    - What are the class timings?
+
+- intent: first_year_curriculum
+  examples: |
+    - First-year curriculum?
+
+- intent: second_year_curriculum
+  examples: |
+    - Second-year curriculum?
+
+- intent: Attendence_percentage 
+  examples: |
+    - What should be the attendance percentage?
+
+- intent: count_of_semesters
+  examples: |
+    - How many semesters do we have?
+
+- intent: sem_based_exams
+  examples: |
+    - Does msit have any sem-based exams?
+
+- intent: CIHL
+  examples: |
+    - what is meant by CIHL?
+
+- intent: mock_test
+  examples: |
+    - do we have any mock tests or any interviews?
+
+- intent: leave
+  examples: |
+    - how to apply for leave?
+
+
+    
+- intent: sat_class
+  examples: |
+    - do we have classes on saturday?
+
+
+
+
+
+
+
+
+
+
